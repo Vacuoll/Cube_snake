@@ -4,17 +4,31 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     private float waitTime;
     public float startWaitTime;
 
     public Transform[] moveSpots;
     private int randomSpot;
+    private int difficulty;
 
-    void Strat()
+    void Start()
     {
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length - 1);
+        difficulty = PlayerPrefs.GetInt("Diff");
+        if (difficulty == 0)
+        {
+            speed = 3f;
+        }
+        else if (difficulty == 1)
+        {
+            speed = 4f;
+        }
+        else if (difficulty == 2)
+        {
+            speed = 5f;
+        }
     }
 
     void Update()

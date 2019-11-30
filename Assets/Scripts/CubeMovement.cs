@@ -13,14 +13,14 @@ public class CubeMovement : MonoBehaviour
     public GameObject Stars;
     public GameObject Pause;
 
-    float PosBtnLeft;
-    float PosBtnRight;
+    private float _posBtnLeft;
+    private float _posBtnRight;
 
     public float speed;
-    public float rotationSpeed;
+    private float rotationSpeed = 130;
 
     public Text Score;
-    private int score;
+    private int _score = 0;
     private int winningScore = 9;
 
     private float offset = 2f;
@@ -28,32 +28,48 @@ public class CubeMovement : MonoBehaviour
     public GameObject tailPrefab;
 
     public bool pause = false;
-    private bool isMove = true;
+    private bool _isMove = true;
+
+    private int difficulty; 
 
 
     void Start()
     {
         tailObjects.Add(gameObject);
-        PosBtnLeft = btnLeft.transform.position.y;
-        PosBtnRight = btnRight.transform.position.y;
+        _posBtnLeft = btnLeft.transform.position.y;
+        _posBtnRight = btnRight.transform.position.y;
+
+        difficulty = PlayerPrefs.GetInt("Diff");
+        if (difficulty == 0)
+        {
+            speed = 4f;
+        }
+        else if (difficulty == 1)
+        {
+            speed = 5f;
+        }
+        else if (difficulty == 2)
+        {
+            speed = 6f;
+        }
 
     }
 
     void Update()
     {
 
-        Score.text = score.ToString();
-    if (isMove)
-     {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        Score.text = _score.ToString() + "/9";
+    if (_isMove)
+    {
+        transform.Translate(Time.deltaTime * speed * Vector3.forward);
 
-        if (PosBtnLeft != btnLeft.transform.position.y)
+        if (_posBtnLeft != btnLeft.transform.position.y)
         {
-            transform.Rotate(-Vector3.up * rotationSpeed * Time.deltaTime);
+            transform.Rotate(Time.deltaTime * rotationSpeed * -Vector3.up);
         }
-        if (PosBtnRight != btnRight.transform.position.y)
+        if (_posBtnRight != btnRight.transform.position.y)
         {
-            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+            transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.up);
         }
     }
         
@@ -64,7 +80,7 @@ public class CubeMovement : MonoBehaviour
     {
         if (other.CompareTag("End"))
         {
-            if (score == winningScore)
+            if (_score == winningScore)
             {
                 Win();
             }
@@ -73,7 +89,7 @@ public class CubeMovement : MonoBehaviour
 
 public void AddTail()
     {
-        score++;
+        _score++;
         
         Vector3 newTailPos = tailObjects[tailObjects.Count - 1].transform.position;
         newTailPos.z -= offset;
@@ -86,7 +102,7 @@ public void AddTail()
         Stars.SetActive(true);
         PanelLose.SetActive(true);
         Pause.SetActive(false);
-        isMove = false;
+        _isMove = false;
     }
 
     public void Win()

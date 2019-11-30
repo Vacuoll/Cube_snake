@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: d1abee74a174e6c46a719f4f99892fad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_0"
+    21300002: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_1"
+    21300004: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_2"
+    21300006: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_3"
+    21300008: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_4"
+    21300010: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_5"
+    21300012: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_6"
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 300
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74842d149bc76c4c8001f3f75102169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_1"
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 510
+        width: 300
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fba224905e60e046861425aae88c9d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 326
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19109a229ef91ec4293005196bfacad8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_3"
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 372
+        width: 300
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee7b5db339d0aa4c99c0500a411db03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 326
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435e7f4de0fe7cb4aa09a0bd5a74d78f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_5"
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 234
+        width: 300
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7e98d1c56314c47996fe4018b77025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "3DGame_Sprites_Level1-\u2014-\u043A\u043E\u043F\u0438\u044F_6"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 89
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6891897b1528ab74da59f26a2107a1af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 026cb56157516044d84c1b5695b357e0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

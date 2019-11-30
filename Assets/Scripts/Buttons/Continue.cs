@@ -1,19 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Continue : MonoBehaviour, IPointerClickHandler
+namespace Buttons
 {
-   public GameObject PanelPause;
-    public GameObject Pause;
-    public bool continuation = false;
-
-    public void OnPointerClick(PointerEventData eventData)
+    public class Continue : MonoBehaviour, IPointerClickHandler
     {
-        PanelPause.SetActive(false);
-        Pause.SetActive(true);
+        public GameObject PanelPause;
+        public GameObject Pause;
+        public bool continuation = false;
 
-        continuation = true;
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            PanelPause.SetActive(false);
+            Pause.SetActive(true);
+
+            continuation = true;
+        }
     }
 }

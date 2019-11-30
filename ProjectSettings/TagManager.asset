@@ -10,6 +10,8 @@ TagManager:
   - End
   - Enemy
   - Game Manager
+  - CubeMain1
+  - CubeMain2
   layers:
   - Default
   - TransparentFX

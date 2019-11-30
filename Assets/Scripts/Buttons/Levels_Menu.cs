@@ -1,39 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class Levels_Menu : MonoBehaviour
+namespace Buttons
 {
-    public Button Level2B;
-    int levelComplete;
-   
-    void Start()
+    public class Levels_Menu : MonoBehaviour
     {
-        levelComplete = PlayerPrefs.GetInt("LevelComplete");
-        PlayerPrefs.Save();
+        public Button Level2B;
+        int levelComplete;
+   
+        void Start()
+        {
+            levelComplete = PlayerPrefs.GetInt("LevelComplete");
+            PlayerPrefs.Save();
 
-        Level2B.interactable = false;
+            Level2B.interactable = false;
         
 
-        switch (levelComplete)
-        {
-            case 2:
-                Level2B.interactable = true;
-                break;
+            switch (levelComplete)
+            {
+                case 2:
+                    Level2B.interactable = true;
+                    break;
+            }
         }
-    }
 
-    public void LoadTo(int level)
-    {
-        SceneManager.LoadScene(level);
-    }
-    public void Reset()
-    {
-        Level2B.interactable = false;
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
-    }
+        public void LoadTo(int level)
+        {
+            SceneManager.LoadScene(level);
+        }
+        public void Reset()
+        {
+            Level2B.interactable = false;
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+        }
 
+    }
 }

@@ -1,14 +1,37 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    private float seeDistance = 5f;
+    private float seeDistance;
 
-    private float speed = 2;
+    private float speed;
   
-    public GameObject target;
+    private CubeMovement target;
+    private int difficulty;
+
+    private void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("CubeMain").GetComponent<CubeMovement>();
+        difficulty = PlayerPrefs.GetInt("Diff");
+        if (difficulty == 0)
+        {
+            speed = 2f;
+            seeDistance = 5f;
+        }
+        else if (difficulty == 1)
+        {
+            speed = 3f;
+            seeDistance = 6f;
+        }
+        else if (difficulty == 2)
+        {
+            speed = 4f;
+            seeDistance = 7f;
+        }
+    }
 
     void Update()
     {
@@ -16,7 +39,6 @@ public class EnemyAttack : MonoBehaviour
             {
                 {
                     transform.LookAt(target.transform.position);
-                    //transform.position = Vector3.Lerp(transform.position, target.transform.position, Time.deltaTime * speed);
                     transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
 
                 }

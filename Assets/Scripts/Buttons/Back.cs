@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Back : MonoBehaviour, IPointerClickHandler
+namespace Buttons
 {
-    public void OnPointerClick(PointerEventData eventData)
+    public class Back : MonoBehaviour, IPointerClickHandler
     {
-        SceneManager.LoadScene("Main");
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            SceneManager.LoadScene("Main");
+        }
     }
 }

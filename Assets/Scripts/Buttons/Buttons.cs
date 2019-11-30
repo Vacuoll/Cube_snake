@@ -1,19 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Buttons : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+namespace Buttons
 {
-
-    public void OnPointerDown(PointerEventData evenData)
+    public class Buttons : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + 5f, transform.position.z);
-    }
 
-    public void OnPointerUp(PointerEventData evenData)
-    {
-        transform.position = new Vector3(transform.position.x, transform.position.y - 5f, transform.position.z);
+        public void OnPointerDown(PointerEventData evenData)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 5f, transform.position.z);
+        }
+
+        public void OnPointerUp(PointerEventData evenData)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - 5f, transform.position.z);
+        }
     }
 }

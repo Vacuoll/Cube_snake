@@ -10,6 +10,7 @@ public class Borders : MonoBehaviour
     void Start()
     {
         mainCube = GameObject.FindGameObjectWithTag("CubeMain").GetComponent<CubeMovement>();
+        
     }
     void OnTriggerEnter(Collider other)
     {

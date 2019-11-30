@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\olya-\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\olya-\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Game3D.517488617.00" t="ExcludeRecursive" />
+    <e p="C:\Users\olya-\Game3D" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Borders.cs" t="Include" />
+          <e p="Buttons" t="Include">
+            <e p="Back.cs" t="Include" />
+            <e p="Buttons.cs" t="Include" />
+            <e p="Continue.cs" t="Include" />
+            <e p="Home.cs" t="Include" />
+            <e p="LevelController.cs" t="Include" />
+            <e p="Levels_Menu.cs" t="Include" />
+            <e p="NextLevel.cs" t="Include" />
+            <e p="Pause.cs" t="Include" />
+            <e p="Play.cs" t="Include" />
+            <e p="Repeat.cs" t="Include" />
+            <e p="Show_Levels.cs" t="Include" />
+          </e>
+          <e p="CubeButton.cs" t="Include" />
+          <e p="CubeButton_Empty.cs" t="Include" />
+          <e p="CubeFloat.cs" t="Include" />
+          <e p="CubeMovement.cs" t="Include" />
+          <e p="Destroyer.cs" t="Include" />
+          <e p="Difficulty" t="Include">
+            <e p="Difficulty.cs" t="Include" />
+          </e>
+          <e p="EnemyAttack.cs" t="Include" />
+          <e p="EnemyPatrol.cs" t="Include" />
+          <e p="Point.cs" t="Include" />
+          <e p="SecretRoom.cs" t="Include" />
+          <e p="Spawner.cs" t="Include" />
+          <e p="StarsRotation.cs" t="Include" />
+          <e p="TailMovement.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Game3D.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
